@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* 💻 Fondo moderno blanco y negro animado */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at center, #0a0a0a 0%, #1a1a1a 50%, #000000 100%);
+      color: white;
+      line-height: 1.6;
+      padding: 20px;
+      text-shadow: 1px 1px 5px rgb(0, 0, 0);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px);
+      background-size: 60px 60px;
+      animation: gridMove 15s linear infinite;
+      z-index: 0;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(0,0,0,0.2), rgba(255,255,255,0.05));
+      background-size: 400% 400%;
+      animation: lightFlow 10s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    @keyframes gridMove {
+      from { transform: translate(0, 0); }
+      to { transform: translate(60px, 60px); }
+    }
+    @keyframes lightFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header { text-align: center; margin-bottom: 30px; position: relative; z-index: 5; }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+
+    .contenedor {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      z-index: 5;
+    }
+
+    .boton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 15px;
+      padding: 15px 30px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      font-size: 1.2em;
+      transition: all 0.3s ease;
+    }
+    .boton:hover { transform: scale(1.05) translateY(-3px); filter: brightness(1.1); }
+    .boton i { font-size: 1.5em; transition: transform 0.3s ease; }
+    .boton:hover i { transform: scale(1.2); }
+
+    .instagram { background-color: #E1306C; }
+    .facebook { background-color: #1877F2; }
+    .gmail { background-color: #D44638; }
+
+    .instagram:hover { background-color: #c91e5a; }
+    .facebook:hover { background-color: #0e62d1; }
+    .gmail:hover { background-color: #b33a2e; }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+      position: relative;
+      z-index: 5;
+    }
+
+    .volver {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      z-index: 10;
+    }
+    .volver:hover { background-color: rgba(0, 0, 0, 0.8); }
+  </style>
+</head>
+
+<body>
+  <a href="index.html" class="volver">⬅ Volver al Inicio</a>
+
+  <header>
+    <h1>Contacto</h1>
+    <p>¡Seguinos o escribinos!</p>
+  </header>
+
+  <div class="contenedor">
+    <a href="https://www.instagram.com/infoyroboticat4garin" target="_blank" class="boton instagram">
+      <i class="fab fa-instagram"></i>
+      <span>Instagram</span>
+    </a>
+
+    <a href="https://www.facebook.com/" target="_blank" class="boton facebook">
+      <i class="fab fa-facebook-f"></i>
+      <span>Facebook</span>
+    </a>
+
+    <a href="mailto:ejemplo@gmail.com" class="boton gmail">
+      <i class="fas fa-envelope"></i>
+      <span>Gmail</span>
+    </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 - Proyecto escolar 7mo 3ra - No borrar</p>
+  </footer>
+</body>
+</html>

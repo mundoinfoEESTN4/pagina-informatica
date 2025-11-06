@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Información del Proyecto</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 💻 Fondo moderno blanco y negro animado */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at center, #0a0a0a 0%, #1a1a1a 50%, #000000 100%);
+      color: rgb(255, 255, 255);
+      line-height: 1.6;
+      padding: 20px;
+      text-shadow: 1px 1px 5px black;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px);
+      background-size: 60px 60px;
+      animation: gridMove 15s linear infinite;
+      z-index: 0;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(0,0,0,0.2), rgba(255,255,255,0.05));
+      background-size: 400% 400%;
+      animation: lightFlow 10s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    @keyframes gridMove {
+      from { transform: translate(0, 0); }
+      to { transform: translate(60px, 60px); }
+    }
+
+    @keyframes lightFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 5;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .contenedor {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 5;
+    }
+
+    h2 {
+      color: #0077ff;
+      margin-top: 20px;
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 25px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ffffff;
+      position: relative;
+      z-index: 5;
+    }
+
+    /* 🔙 Botón de volver */
+    .volver {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      z-index: 10;
+    }
+    .volver:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="volver">⬅ Volver al Inicio</a>
+
+  <header>
+    <h1>Información del Proyecto</h1>
+    <p>Descripción general sobre esta página web</p>
+  </header>
+
+  <div class="contenedor">
+    <h2>¿De qué se trata esta web?</h2>
+    <p>
+      ¡Bienvenidos a nuestro espacio digital!
+      Esta página fue creada por los estudiantes de 7mo 3ra como parte de un proyecto de Informática, con el propósito de compartir nuestras actividades, novedades, trabajos destacados y formas de contacto.
+      Es mucho más que un trabajo práctico: es una ventana a todo lo que aprendemos y construimos juntos en clase.
+    </p>
+    <p>
+      Nuestro proyecto tiene como propósito principal difundir y visibilizar la modalidad de Informática, la cual se mantiene constantemente activa y participativa en múltiples eventos y actividades...
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 - Proyecto escolar 7mo 3ra</p>
+  </footer>
+
+</body>
+</html>

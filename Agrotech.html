@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrotech</title>
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        body {
+            font-family: Arial, sans-serif; /* Tipo de letra */
+            background-color: #f4f4f4; /* Fondo gris claro */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Color del texto */
+        }
+
+        /* --- ENCABEZADO PRINCIPAL --- */
+        header {
+            background-color: #2e8b57; /* Verde natural */
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            position: relative; /* Necesario para posicionar el botón dentro */
+        }
+
+        /* --- BOTÓN VOLVER AL INICIO --- */
+        .boton-volver {
+            position: absolute; /* Permite colocarlo en una posición exacta */
+            top: 15px; /* Distancia desde arriba */
+            left: 20px; /* Distancia desde la izquierda */
+            background-color: white; /* Fondo blanco */
+            color: #2e8b57; /* Texto verde */
+            border: none; /* Sin borde */
+            padding: 10px 20px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el puntero al pasar el mouse */
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s; /* Animación suave */
+        }
+
+        /* Efecto al pasar el mouse sobre el botón */
+        .boton-volver:hover {
+            background-color: #2e8b57; /* Fondo verde */
+            color: white; /* Texto blanco */
+        }
+
+        /* --- CONTENIDO PRINCIPAL --- */
+        main {
+            max-width: 800px; /* Ancho máximo del contenido */
+            margin: 40px auto; /* Centra el contenido */
+            background-color: white; /* Fondo blanco */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Imagen de presentación */
+        .imagen-presentacion {
+            display: block; /* Para centrarla fácilmente */
+            margin: 20px auto; /* Espaciado y centrado */
+            max-width: 100%; /* Evita que sea más grande que el recuadro */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra suave */
+        }
+
+        /* Subtítulo */
+        h2 {
+            color: #2e8b57;
+        }
+
+        /* Texto explicativo */
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        footer {
+            text-align: center;
+            background-color: #2e8b57;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ENCABEZADO CON TÍTULO Y BOTÓN -->
+    <header>
+        <!-- Botón para volver al inicio (info.html es la página principal) -->
+        <button class="boton-volver" onclick="window.location.href='novedades.html'">Volver al inicio</button>
+
+        <!-- Título principal -->
+        <h1>Agrotech</h1>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- Imagen de presentación (colocá tu imagen en la misma carpeta o cambiá la ruta si está en otra) -->
+        <img src="agrotech 2 foto.jpg" alt="Imagen de presentación del proyecto Agrotech" class="imagen-presentacion">
+
+        <!-- Subtítulo -->
+        <h2>¿Qué es Agrotech?</h2>
+
+        <!-- Texto explicativo (reemplazalo luego por el texto real del proyecto) -->
+        <p>Este proyecto no solo busca ofrecer una solución innovadora para el riego de plantas, sino también fomentar una conciencia más sostenible respecto a cómo cultivamos nuestros alimentos y cuidamos el medio ambiente. La iniciativa propone la implementación de un sistema automatizado de riego, diseñado para optimizar el uso del agua y garantizar que las plantas reciban la cantidad adecuada de humedad según sus necesidades específicas.
+        <br><br>
+        A través de la integración de sensores, controladores y software de monitoreo, el sistema permite supervisar en tiempo real las condiciones del suelo y del entorno, ajustando el riego de forma automática. De esta manera, se evita tanto el desperdicio de agua como el riego insuficiente, contribuyendo a una agricultura más eficiente y responsable con los recursos naturales.
+        <br><br>
+        Este proyecto resulta especialmente relevante en un contexto donde la producción sostenible de alimentos se vuelve cada vez más necesaria frente al crecimiento poblacional y los efectos del cambio climático. Además, promueve la adopción de tecnologías inteligentes que combinan innovación, sostenibilidad y cuidado ambiental, inspirando una nueva forma de relacionarnos con la naturaleza a través del uso consciente de la tecnología.</p>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Proyecto Agrotech © 2025 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

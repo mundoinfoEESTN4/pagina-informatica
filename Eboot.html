@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eboot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            position: relative;
+        }
+
+        .boton-volver {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            background-color: white;
+            color: #2e8b57;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .boton-volver:hover {
+            background-color: #2e718b;
+            color: white;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .imagen-presentacion {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #2e718b;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2e718b;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="boton-volver" onclick="window.location.href='novedades.html'">Volver al inicio</button>
+        <h1>Eboot</h1>
+    </header>
+
+    <main>
+        <!-- Imagen de presentación -->
+        <img src="ebbot foto.jpg" alt="Imagen de presentación del proyecto Eboot" class="imagen-presentacion">
+
+        <h2>¿Qué es Eboot?</h2>
+
+        <p>Eboot es un robot diseñado a partir de materiales reciclados, cuyo propósito principal es transmitir y gestionar información relevante sobre distintos aspectos de la institución educativa, tales como profesores, aulas, actividades, horarios y eventos escolares. Este proyecto combina sostenibilidad, innovación tecnológica y funcionalidad, demostrando que es posible crear soluciones inteligentes utilizando recursos reutilizados.
+            <br><br>
+            El sistema de Eboot está orientado a mejorar la comunicación dentro de la escuela, brindando datos actualizados de manera rápida y accesible para estudiantes, docentes y personal administrativo. Gracias a su diseño modular y adaptable, puede integrarse fácilmente en diferentes espacios educativos y cumplir funciones informativas diversas.
+            <br><br>
+            Además, Eboot cuenta con una función adicional de vigilancia, ya que incorpora una cámara IP capaz de grabar, escuchar y transmitir en tiempo real. Esta característica le permite reforzar la seguridad del entorno escolar y supervisar actividades específicas, todo mientras mantiene un enfoque responsable y educativo en el uso de la tecnología.
+            <br><br>
+            En conjunto, Eboot representa un proyecto innovador, ecológico y funcional, que no solo promueve el reciclaje y la reutilización de materiales electrónicos, sino también el uso inteligente de la tecnología para mejorar la comunicación y la seguridad dentro de la comunidad educativa.</p>
+    </main>
+
+    <footer>
+        <p>Proyecto Eboot © 2025 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

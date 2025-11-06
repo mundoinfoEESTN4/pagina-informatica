@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="alternate" type="application/rss+xml" title="Novedades Informática" href="rss.xml">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novedades</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* 💻 Fondo moderno blanco y negro animado */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at center, #0a0a0a 0%, #1a1a1a 50%, #000000 100%);
+      color: rgb(255, 255, 255);
+      line-height: 1.6;
+      padding: 20px;
+      text-shadow: 1px 1px 5px rgb(0, 0, 0);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px);
+      background-size: 60px 60px;
+      animation: gridMove 15s linear infinite;
+      z-index: 0;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(0,0,0,0.2), rgba(255,255,255,0.05));
+      background-size: 400% 400%;
+      animation: lightFlow 10s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    @keyframes gridMove { from {transform: translate(0,0);} to {transform: translate(60px,60px);} }
+    @keyframes lightFlow { 0%{background-position:0%50%;}50%{background-position:100%50%;}100%{background-position:0%50%;} }
+
+    header { text-align: center; margin-bottom: 30px; position: relative; z-index: 5; }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+
+    .contenedor {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 5;
+    }
+
+    h2 { color: #ffffff; margin-top: 30px; }
+    p, ul { margin-top: 10px; }
+
+    a.proyecto {
+      display: block;
+      margin-top: 10px;
+      color: #0040ff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a.proyecto:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+      position: relative;
+      z-index: 5;
+    }
+
+    .volver {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      z-index: 10;
+    }
+    .volver:hover { background-color: rgba(0, 0, 0, 0.8); }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="volver">⬅ Volver al Inicio</a>
+
+  <header>
+    <h1>Novedades</h1>
+    <p><!-- Introducción opcional --></p>
+  </header>
+
+  <div class="contenedor">
+    <h2>Fechas de Exposiciones</h2>
+    <ul>
+      <li>15/04/2025</li>
+      <li>03/05/2025</li>
+      <li>18/06/2025</li>
+      <li>10/09/2025</li>
+    </ul>
+
+    <h2>Eventos</h2>
+    <p>Ejemplo</p>
+
+    <h2>Proyectos</h2>
+    <a href="Agrotech.html" class="Agrotech">Agrotech</a>
+    <br><b>
+    <a href="Inmerso.html" class="Inmerso">Inmerso</a>
+    <br><b>
+    <a href="Ecofil.html" class="ecofil">Ecofil</a>
+    <br><b>
+    <a href="Eboot.html" class="Eboot">Eboot</a>
+    <br><b>
+    <a href="SCA.html" class="SCA">SCA</a>
+    <br><b>
+    <a href="Somos tecnica 4.html" class="Somos Tecnica 4">Somos Tecnica 4</a>
+
+    <h2>Juegos Bonaerense</h2>
+    <p>Ejemplo</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 - Proyecto escolar 7mo 3ra - No borrar</p>
+  </footer>
+<a href="rss.xml" target="_blank" style="
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 15px;
+">
+  🔔 Suscribirse al RSS
+</a>
+<script>
+async function checkFeed() {
+  const response = await fetch('rss.xml');
+  const text = await response.text();
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(text, 'application/xml');
+  const latestItem = xml.querySelector('item');
+  const title = latestItem.querySelector('title').textContent;
+
+  const lastNotified = localStorage.getItem('lastNotify');
+  if (lastNotified !== title) {
+    if (Notification.permission === "granted") {
+      new Notification("Nueva novedad: " + title);
+      localStorage.setItem('lastNotify', title);
+    } else if (Notification.permission !== "denied") {
+      Notification.requestPermission().then(permission => {
+        if (permission === "granted") {
+          new Notification("Nueva novedad: " + title);
+          localStorage.setItem('lastNotify', title);
+        }
+      });
+    }
+  }
+}
+
+checkFeed();
+setInterval(checkFeed, 10000); // revisar cada 10 segundos
+</script>
+</body>
+</html>

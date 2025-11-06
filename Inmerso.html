@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmerso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #0078D7;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            position: relative;
+        }
+
+        .boton-volver {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            background-color: white;
+            color: #0078D7;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .boton-volver:hover {
+            background-color: #0078D7;
+            color: white;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .imagen-presentacion {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #0078D7;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0078D7;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="boton-volver" onclick="window.location.href='novedades.html'">Volver al inicio</button>
+        <h1>Inmerso</h1>
+    </header>
+
+    <main>
+        <!-- Imagen de presentación -->
+        <img src="inmerso foto.jpg" alt="Imagen de presentación del proyecto Inmerso" class="imagen-presentacion">
+
+        <h2>¿Qué es Inmerso?</h2>
+
+        <p>"Inmerso" es un videojuego del género roguelike en 2D, ambientado en un misterioso sistema de cuevas submarinas. El jugador asume el papel de un buzo explorador, cuya misión es adentrarse en las profundidades del océano para descubrir pasadizos ocultos, enfrentarse a criaturas marinas y sobrevivir en un entorno hostil e impredecible.
+            <br><br>
+            El mundo del juego se genera de manera procedural, utilizando algoritmos como Random Walk y Binary Space Partitioning (BSP). Gracias a estos métodos, cada partida ofrece un mapa completamente nuevo, con habitaciones interconectadas por corredores de formas y tamaños variables, lo que garantiza una experiencia única e irrepetible en cada exploración.
+            <br><br>
+            Los enemigos submarinos presentan animaciones y patrones de ataque creados a mano, lo que aporta un toque artesanal y detallado a la jugabilidad. Estos adversarios no solo representan un desafío en términos de combate, sino que también contribuyen a la atmósfera inmersiva y tensa del entorno acuático.
+            <br><br>
+            Además de la exploración y el combate, el diseño de “Inmerso” busca transmitir una sensación constante de aislamiento y descubrimiento, apoyándose en la iluminación tenue, los efectos visuales del agua y una ambientación sonora que refuerza la profundidad y el misterio del océano.
+            En conjunto, “Inmerso” propone una experiencia desafiante y envolvente, donde la estrategia, la exploración y la supervivencia se combinan para ofrecer un viaje único a través de las profundidades desconocidas del mar.</p>
+    </main>
+
+    <footer>
+        <p>Proyecto Inmerso © 2025 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
