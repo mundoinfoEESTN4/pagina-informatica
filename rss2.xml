@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="#"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Departamento de Informática - Novedades EEST N°4</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/index.html</link>
+<atom:link href="https://mundoinfoeestn4.github.io/pagina-informatica/rss.xml" rel="self" type="application/rss+xml"/>
+<description>Últimas novedades, proyectos y actividades del Departamento de Informática - Proyecto Escolar 7mo 3ra</description>
+<language>es</language>
+<lastBuildDate>Thu, 06 Nov 2025 21:00:00 +0000</lastBuildDate>
+
+<item>
+<title>📅 Fechas de Exposiciones 2025</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/novedades.html#exposiciones</link>
+<description>Las exposiciones se realizarán los días 15/04, 03/05, 18/06 y 10/09 de 2025.</description>
+<pubDate>Mon, 14 Apr 2025 10:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>🎉 Nuevos Eventos del Año</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/novedades.html#eventos</link>
+<description>Descubrí los nuevos eventos del ciclo lectivo 2025 organizados por los alumnos de Informática.</description>
+<pubDate>Mon, 05 May 2025 09:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>💡 Proyecto: Agrotech</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/Agrotech.html</link>
+<description>Proyecto Agrotech — innovación aplicada a la tecnología agrícola.</description>
+<pubDate>Mon, 09 Jun 2025 12:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>🌐 Proyecto: Inmerso</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/Inmerso.html</link>
+<description>Exploración del entorno digital mediante simulación y aprendizaje inmersivo.</description>
+<pubDate>Thu, 10 Jul 2025 13:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>🌿 Proyecto: Ecofil</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/Ecofil.html</link>
+<description>Un enfoque sustentable desde la informática: automatización y medio ambiente.</description>
+<pubDate>Fri, 29 Aug 2025 14:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>⚙️ Proyecto: Eboot</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/Eboot.html</link>
+<description>Desarrollo de soluciones tecnológicas para el aprendizaje y la innovación.</description>
+<pubDate>Thu, 11 Sep 2025 09:30:00 +0000</pubDate>
+</item>
+
+<item>
+<title>🧩 Proyecto: SCA</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/SCA.html</link>
+<description>Sistema de Control Automatizado, proyecto de 7mo 3ra.</description>
+<pubDate>Fri, 19 Sep 2025 10:15:00 +0000</pubDate>
+</item>
+
+<item>
+<title>🏫 Proyecto: Somos Técnica 4</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/Somos-tecnica-4.html</link>
+<description>Proyecto institucional que muestra el trabajo del departamento de Informática.</description>
+<pubDate>Mon, 20 Oct 2025 16:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>🎮 Juegos Bonaerenses</title>
+<link>https://mundoinfoeestn4.github.io/pagina-informatica/novedades.html#juegos</link>
+<description>Participación del departamento de Informática en los Juegos Bonaerenses 2025.</description>
+<pubDate>Thu, 06 Nov 2025 20:00:00 +0000</pubDate>
+</item>
+
+</channel>
+</rss>
