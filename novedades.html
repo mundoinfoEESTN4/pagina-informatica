@@ -143,18 +143,61 @@
   <footer>
     <p>&copy; 2025 - Proyecto escolar 7mo 3ra - No borrar</p>
   </footer>
-<a href="rss.xml" target="_blank" style="
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-  background-color: rgba(255,255,255,0.1);
-  padding: 10px 15px;
-  border-radius: 8px;
-  display: inline-block;
-  margin-top: 15px;
-">
-  🔔 Suscribirse al RSS
-</a>
+<div style="text-align: center; margin-top: 40px; position: relative; z-index: 10;">
+  <!-- Feedly -->
+  <a 
+    href="https://feedly.com/i/subscription/feed/https://mundoinfoeestn4.github.io/pagina-informatica/rss.xml"
+    target="_blank"
+    style="
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #0078ff, #00b7ff);
+      color: white;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-decoration: none;
+      border-radius: 50px;
+      margin: 5px;
+      transition: all 0.3s ease;
+    "
+    onmouseover="this.style.transform='scale(1.08)';"
+    onmouseout="this.style.transform='scale(1)'"
+  >
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png" 
+         alt="RSS Icon" 
+         width="28" height="28" 
+         style="filter: brightness(0) invert(1);" />
+    <span>Seguir en Feedly</span>
+  </a>
+
+  <!-- Ver XML -->
+  <a 
+    href="https://mundoinfoeestn4.github.io/pagina-informatica/rss.xml"
+    target="_blank"
+    style="
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #222;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-decoration: none;
+      border-radius: 50px;
+      margin: 5px;
+      transition: all 0.3s ease;
+    "
+    onmouseover="this.style.backgroundColor='#444'"
+    onmouseout="this.style.backgroundColor='#222'"
+  >
+    📡 Ver Feed RSS
+  </a>
+
+  <p style="margin-top:10px; color:#ccc; font-size:0.9em;">
+    Suscribite a nuestras novedades y proyectos de informática 🔔
+  </p>
+</div>
 <script>
 async function checkFeed() {
   const response = await fetch('rss.xml');
